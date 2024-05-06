@@ -101,6 +101,7 @@ func resourceMachineLearningWorkspace() *pluginsdk.Resource {
 				ValidateFunc: validation.StringInSlice([]string{
 					"Default",
 					"FeatureStore",
+					"Hub",
 				}, false),
 				Default: "Default",
 			},
